@@ -1,0 +1,13 @@
+
+
+export MY_WORKSPACE_HOME=$HOME/5755_ws
+alias sb='source $HOME/.bashrc'
+alias sw='source $MY_WORKSPACE_HOME/devel/setup.sh'
+alias kill_all='pkill -f gz; pkill -f gazebo; pkill -f baxter; pkill -f roslaunch; pkill -f rosmaster; pkill -f roscore; pkill -f rosout; pkill -f robot_state_publisher'
+alias baxter_home='cd $MY_WORKSPACE_HOME/'
+alias baxter_sim='baxter_home && ./baxter.sh sim'
+alias baxter_world='sw && roslaunch baxter_gazebo baxter_world.launch'
+alias baxter_enable='sw && rosrun baxter_tools enable_robot.py -e'
+alias baxter_unstuck='sw && rosrun baxter_tools tuck_arms.py -u'
+
+

@@ -1,0 +1,487 @@
+    1  git clone https://github.com/rojas70/learning_ros_setup_scripts.git  
+    2  sudo apt install git
+    3  sudo apt update
+    4  sudo apt install git
+    5  git clone https://github.com/rojas70/learning_ros_setup_scripts.git  
+    6  ls
+    7  cd learning_ros_setup_scripts/
+    8  ls
+    9  sudo chmod +x *.sh
+   10  sudo ./install_ros_and_tools_noetic.sh
+   11  ls
+   12  cd melodic/
+   13  sudo chmod +x *.sh
+   14  sudo ./install_ros_and_tools_melodic.sh 
+   15  sudo apt update
+   16  sudo apt upgrade
+   17  sudo apt install terminator
+   18  sudo gedit 
+   19  sudo gedit ~/.bashrc
+   20  roscd
+   21  cd src
+   22  ls
+   23  chmod +x opencv_install.sh
+   24  sudo ./opencv_install.sh
+   25  python3 -m pip install --upgrade pip
+   26  python3
+   27  python3 -m pip install --upgrade pip
+   28  python3 -m pip install --upgrade pip3
+   29  python3 -m pip3 install --upgrade pip
+   30  python3 -m pip install --upgrade pip3
+   31  python -m ensurepip
+   32  python -m pip install --upgrade pip
+   33  pip install --upgrade pip
+   34  python -m pip install --upgrade pip
+   35  python3 -m pip install --upgrade pip
+   36  python -m pip install --upgrade pip
+   37  cd ~/tools/
+   38  wget https://raw.githubusercontent.com/PickNikRobotics/deep_grasp_demo/master/dexnet_install.sh
+   39  wget https://raw.githubusercontent.com/PickNikRobotics/deep_grasp_demo/master/dexnet_requirements.txt
+   40  ls
+   41  chmod +x dexnet_install.sh
+   42  ./dexnet_install.sh gpu
+   43  python3 install setuptools
+   44  pip3 install setuptools
+   45  sudo apt install python3-pip
+   46  python3 -m pip install --upgrade pip
+   47  pip3 install setuptools
+   48  ./dexnet_install.sh gpu
+   49  cd learning_ros_setup_scripts/
+   50  ls
+   51  cd melodic/
+   52  ls
+   53  ./setup_workspace_learning_ros_noetic.sh robot-chenwei wchen@cuhk.du.hk
+   54  ./setup_workspace_learning_ros_melodic.sh robot-chenwei wchen@cuhk.du.hk
+   55  cd srcx
+   56  cd src
+   57  ls
+   58  cd ~/ros_ws/src/
+   59  git clone https://github.com/rojas70/learning_ros_external_pkgs_noetic.git
+   60  cd ..
+   61  catkin_make
+   62  cd src/
+   63  git clone https://github.com/PickNikRobotics/deep_grasp_demo
+   64  cd deep_grasp_demo/
+   65  ls
+   66  chmod +x pcl_install.sh
+   67  sudo ./pcl_install.sh
+   68  ls
+   69  cd pcl-pcl-1.11.0/
+   70  ls
+   71  sudo rm -r ./build/
+   72  cd ..
+   73  sudo ./pcl_install.sh
+   74  ls
+   75  cd ..
+   76  git clone https://github.com/atenpas/gpd
+   77  ls
+   78  cd gpd/
+   79  ls
+   80  sudo gedit CMakeLists.txt 
+   81  cd ..
+   82  catkin_make
+   83  cd src/
+   84  ls
+   85  git clone https://raw.githubusercontent.com/ros-planning/moveit/master/moveit
+   86  git clone https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosintall
+   87  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+   88  sudo apt install wstool
+   89  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+   90  sudo apt install python3-wstool
+   91  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+   92  wstool init .
+   93  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+   94  ls
+   95  wstool remove  moveit_tutorials  # this is cloned in the next section
+   96  wstool update -t .
+   97  ls
+   98  cd ..
+   99  catkin_make
+  100  sudo apt install ros-melodic-octomap
+  101  catkin_make
+  102  sudo apt install ros-melodic-eigen-stl-containers 
+  103  catkin_make
+  104  sudo apt install ros-melodic-random-numbers
+  105  catkin_make
+  106  cd src/
+  107  git clone https://github.com/PickNikRobotics/moveit_task_constructor
+  108  cd ..
+  109  git clone https://github.com/PickNikRobotics/moveit_task_constructor
+  110  catkin_make
+  111  sudo apt install ros-melodic-rosparam-shortcuts
+  112  catkin_make
+  113  cd src/gpd/
+  114  ls
+  115  cd ..
+  116  catkin_make
+  117  cd src/gpd/\
+  118  ls
+  119  mkdir bhuild
+  120  mkdir build
+  121  cd build/
+  122  cmake ..
+  123  make
+  124  make -j20
+  125  sudo make install
+  126  cd ..
+  127  catkin_make
+  128  sudo apt install ros-melodic-graph-msgs 
+  129  catkin_make
+  130  cd src
+  131  git clone git://github.com/flexible-collision-library/fcl.git
+  132  cd ..
+  133  catkin_make
+  134  cd src/
+  135  cd fcl
+  136  ls
+  137  mkdir build
+  138  cd build/
+  139  cmake ..
+  140  make -j20
+  141  sudo make install
+  142  cd ..
+  143  catkin_make
+  144  sudo apt install ros-melodic-srdfdom
+  145  catkin_make
+  146  sudo apt install ros-melodic-pybind11-catkin 
+  147  catkin_make
+  148  sudo apt install ros-melodic-ompl
+  149  catkin_make
+  150  sudo apt install libglew
+  151  catkin_make
+  152  sudo apt install ros-melodic-warehouse-ros
+  153  catkin_make
+  154  sudo apt install ros-melodic-eigenpy
+  155  catkin_make
+  156  history > rosh.txt
+  157  sudo apt purge nvidia-*
+  158  sudo apt autoremove
+  159  sudo add-apt-repository ppa:graphics-drivers/ppa
+  160  sudo apt-get install nvidia-driver-460 nvidia-cuda-toolkit
+  161  rosrun rqt_image_view rqt_image_view 
+  162  ls
+  163  cd tools/
+  164  ls
+  165  cd dexnet_deps/
+  166  ls
+  167  cd ..
+  168  ./dexnet_install.sh gpu
+  169  ./dexnet_deps/gqcnn/scripts/downloads/models/download_models.sh
+  170  ls
+  171  gedit .ignition/fuel/config.yaml
+  172  gedit ~/.ignition/fuel/config.yaml
+  173  history > tool.txt
+  174  sudo gedit /home/trs/ros_ws/src/deep_grasp_demo/moveit_task_constructor_gpd/include/moveit_task_constructor_gpd/grasp_detection.h
+  175  sudo gedit /home/trs/ros_ws/src/deep_grasp_demo/moveit_task_constructor_gpd/src/grasp_detection.cpp 
+  176  cd ~/ros_ws/
+  177  cd src/
+  178  wstool merge https://raw.githubusercontent.com/ros-planning/moveit_task_constructor/master/.rosinstall
+  179  wstool update
+  180  cd ~/tools/
+  181  ls
+  182  git clone https://github.com/qhull/qhull
+  183  cd qhull/
+  184  ls
+  185  cd build/
+  186  ls
+  187  cmake ..
+  188  make -j20
+  189  sudo make install
+  190  cd ..
+  191  git checkout -b 2015.2
+  192  cd build/
+  193  cmake ..
+  194  make -j20
+  195  cd ..
+  196  git checkout -b v5.0.0.0
+  197  cd ..
+  198  cd qhull/build/
+  199  cmake ..
+  200  make -j20
+  201  sudo make install
+  202  cd ..
+  203  git checkout -b 2015.1
+  204  cd build/
+  205  cd ..
+  206  cd build/
+  207  cmake ..
+  208  make 
+  209  sudo make install
+  210  sudo apt install libqhull-dev
+  211  pip3 install libqhull-dev
+  212  sudo apt install libqhull-r7 
+  213  cd ..
+  214  git checkout -b 2019.1 
+  215  ccd build/
+  216  cd build/
+  217  cmake ..
+  218  make 
+  219  sudo make install
+  220  sudo gedit /home/trs/ros_ws/src/deep_grasp_demo/moveit_task_constructor_gpd/include/moveit_task_constructor_gpd/grasp_detection.h
+  221  cd ~/ros_ws/src/deep_grasp_demo/cd ..
+  222  cd ~/ros_ws/src/
+  223  grep -R "ExecuteTaskSolution" ./
+  224  cd ..
+  225  source devel/setup.bash 
+  226  roslaunch deep_grasp_task gazebo_pick_place.launch 
+  227  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch
+  228  sudo gedit /home/trs/ros_ws/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_env.h
+  229  sudo gedit /home/trs/ros_ws/src/deep_grasp_demo/deep_grasp_task/include/deep_grasp_task/deep_pick_place_task.h
+  230  catkin_make
+  231  cd src/
+  232  wstool merge https://raw.githubusercontent.com/ros-planning/moveit_task_constructor/master/.rosinstall
+  233  wstool merge https://raw.githubusercontent.com/ros-planning/moveit/master/.rosinstall
+  234  wstool init .
+  235  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+  236  wstool remove  moveit_tutorials  # this is cloned in the next section
+  237  wstool update -t .
+  238  cd ros_ws/
+  239  catkin_make
+  240  roslaunch deep_grasp_task sensor_data_gazebo.launch 
+  241  roslaunch moveit_task_constructor_demo demo.launch
+  242  source devel/setup.bash 
+  243  roslaunch moveit_task_constructor_demo demo.launch
+  244  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch load_images load_images 
+  245  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch 
+  246  catkin_make
+  247  ls
+  248  cd  src
+  249  ls
+  250  git clone https://github.com/ros-planning/moveit.git
+  251  ls
+  252  cd moveit
+  253  ls
+  254  git checkout origin/melodic-devel 
+  255  git checkout -b origin/melodic-devel 
+  256  cd ..
+  257  catkin_make
+  258  cd src/moveit
+  259  git checkout 1.0.0
+  260  git checkout -b  1.0.0
+  261  cd ..
+  262  catkin_make
+  263  cd src/moveit
+  264  git checkout -b  1.1.0
+  265  cd ..
+  266  catkin_make
+  267  sudo apt install ros-melodic-moveit-resources
+  268  catkin_make
+  269  sudo apt install ros-melodic-moveit-resources
+  270  cd src/moveit
+  271  ls
+  272  git checkout origin/melodic-devel 
+  273  git checkout origin/melodic-devel
+  274  cd ..
+  275  catkin_make
+  276  cd src/moveit
+  277  git checkout master 
+  278  git checkout -b master 
+  279  cd ..
+  280  ls
+  281  sudo rm -r moveit
+  282  ls
+  283  git clone https://github.com/ros-planning/moveit
+  284  cd moveit
+  285  git checkout -b origin/noetic-devel 
+  286  cd ..
+  287  catkin_make
+  288  cd src/moveit
+  289  git checkout -b  origin/kinetic-devel 
+  290  cd ~/ros_ws/
+  291  catkin_make
+  292  cd src/
+  293  git clone https://github.com/tahsinkose/panda_moveit_config.git -b melodic-devel
+  294  git clone https://github.com/tahsinkose/franka_ros.git -b simulation
+  295  cd..
+  296  cd ..
+  297  catkin_make
+  298  sudo apt install ros-melodic-franka-control
+  299  sudo apt install ros-melodic-franka-description 
+  300  sudo apt install ros-melodic-franka-gripper
+  301  catkin_make
+  302  source devel/setup.bash 
+  303  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch 
+  304  catkin_make
+  305  cd src/
+  306  wstool merge https://raw.githubusercontent.com/ros-planning/moveit_task_constructor/master/.rosinstall
+  307  wstool update
+  308  ls
+  309  git clone https://github.com/JStech/moveit_task_constructor
+  310  cd ..
+  311  catkin_make
+  312  cd src
+  313  git clone https://github.com/JStech/deep_grasp_demo
+  314  cd ..
+  315  git clone https://github.com/JStech/deep_grasp_demo
+  316  catkin_make
+  317  cd src/
+  318  ls
+  319  git clone https://github.com/JStech/moveit
+  320  cd ..
+  321  catkin_make
+  322  sudo apt install ros-melodic-moveit-resources
+  323  catkin_make
+  324  sudo apt remote ros-melodic-moveit-resources
+  325  sudo apt remove ros-melodic-moveit-resources
+  326  sudo apt install ros-melodic-moveit-resources
+  327  catkin_make
+  328  cd src/
+  329  git clone https://github.com/JStech/moveit_msgs
+  330  cd ..
+  331  catkin_make
+  332  cd src 
+  333  git clone https://github.com/ros-planning/moveit_resources
+  334  cd ..
+  335  catkin_make
+  336  cd src/
+  337  git clone https://github.com/ros-planning/moveit
+  338  cd ..
+  339  catkin_make
+  340  cd src/
+  341  git clone https://github.com/ros-planning/geometric_shapes
+  342  cd ..
+  343  catkin_make
+  344  rostopic list
+  345  rostopic echo moveit_task_constructor_gpd/data/pointclouds
+  346  rostopic echo /filtered_cloud 
+  347  sudo gedit /home/trs/ros_ws/src/moveit_task_constructor/core/src/stages/fix_collision_objects.cpp
+  348  rostopic list
+  349  rosrun rqt_image_view rqt_image_view 
+  350  rosrun rqt_image_view rqt_image_view 
+  351  rostopic list
+  352  rostopic echo /planning_scene 
+  353  ls
+  354  cd ros_ws/
+  355  ls
+  356  catkin_make
+  357  cd src
+  358  git clone https://github.com/JStech/moveit_task_constructor
+  359  cd ..
+  360  catkin_make
+  361  cd src/
+  362  git clone https://github.com/ros-planning/moveit_task_constructor
+  363  cd ..
+  364  catkin_make
+  365  cd src/
+  366  git clone https://github.com/PickNikRobotics/deep_grasp_demo
+  367  cd ..
+  368  catkin_
+  369  catkin_make
+  370  source devel/setup.bash 
+  371  roslaunch moveit_task_constructor_gpd gpd_demo.launch 
+  372  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch 
+  373  catkin_make
+  374  roslaunch panda_moveit_config demo.launch
+  375  catkin_make
+  376  roslaunch moveit_task_constructor_demo pickplace.launch
+  377  roslaunch moveit_task_constructor_demo demo.launch
+  378  roslaunch deep_grasp_task gazebo_pick_place.launch
+  379  source devel/setup.bash 
+  380  roslaunch deep_grasp_task gazebo_pick_place.launch
+  381  roslaunch moveit_task_constructor_demo demo.launch
+  382  roslaunch deep_grasp_task gazebo_pick_place.launch
+  383  roslaunch moveit_task_constructor_demo demo.launch
+  384  roslaunch deep_grasp_task gazebo_pick_place.launch
+  385  roslaunch deep_grasp_task sensor_data_gazebo.launch 
+  386  roslaunch deep_grasp_task panda_world.launch 
+  387  roslaunch deep_grasp_task panda.launch 
+  388  roslaunch deep_grasp_task gazebo_pick_place.launch
+  389  catkin_make
+  390  roslaunch deep_grasp_task gazebo_pick_place.launch
+  391  sudo apt install ros-$ROS_DISTRO-gazebo-ros-control
+  392  sudo apt install ros-melodic-gazebo-ros
+  393  sudo apt install ros-melodic-gazebo-ros-control
+  394  sudo apt install ros-$ROS_DISTRO-gazebo-ros-control ros-${ROS_DISTRO}-rospy-message-converter ros-${ROS_DISTRO}-effort-controllers ros-${ROS_DISTRO}-joint-state-controller ros-${ROS_DISTRO}-moveit ros-${ROS_DISTRO}-moveit-commander ros-${ROS_DISTRO}-moveit-visual-tools
+  395  roslaunch deep_grasp_task gazebo_pick_place.launch
+  396  catkin_make
+  397  sudo rosdep init
+  398  rosdep init
+  399  roslaunch deep_grasp_task gazebo_pick_place.launch
+  400  catkin_make
+  401  roslaunch deep_grasp_task gazebo_pick_place.launch
+  402  rosrun moveit_task_constructor_demo cartesian
+  403  sudo apt-get install ros-melodic-controller-manager
+  404  sudo apt-get install ros-melodic-controller
+  405  sudo apt-get install ros-melodic-ros-controller
+  406  sudo apt-get install ros-melodic-ros-controllers 
+  407  sudo apt-get install ros-melodic-ros-control
+  408  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch
+  409  roslaunch baxter_moveit_tutorial moveit_init.launch
+  410  source devel/setup.bash
+  411  roslaunch baxter_moveit_tutorial moveit_init.launch
+  412  roslaunch gazebo_ros empty_world.launch
+  413  roslaunch deep_grasp_task gazebo_pick_place.launch 
+  414  roslaunch moveit_task_constructor_demo pickplace.launch
+  415  roslaunch gazebo_worlds table.launch
+  416  sudo apt install ros-melodic-gazebo-ros
+  417  sudo apt install ros-melodic-gazebo-plugins
+  418  roslaunch park_gazebo baxter_on_pedestal_w_realsense.launch
+  419  source devel/setup.bash 
+  420  roslaunch park_gazebo baxter_on_pedestal_w_realsense.launch
+  421  roslaunch baxter_gazebo baxter_world.launch 
+  422  rosrun moveit_task_constructor_demo modular
+  423  cd src 
+  424  git clone https://github.com/ros-planning/moveit_core
+  425  git clone https://github.com/ros-planning/geometric_shapes
+  426  git clone https://github.com/ros-planning/moveit_ros_planning_interface
+  427  git clone https://github.com/ros-planning/moveit
+  428  git clone https://github.com/ros-planning/moveit_task_constructor
+  429  wstool merge https://raw.githubusercontent.com/ros-planning/moveit_task_constructor/master/.rosinstall
+  430  wstool update
+  431  wstool merge https://raw.githubusercontent.com/ros-planning/moveit_task_constructor/master/.rosinstall
+  432  wstool update
+  433  git clone https://github.com/ros-planning/moveit_task_constructor_demo
+  434  git clone https://github.com/ros-planning/moveit_task_constructor_demo.git
+  435  cd ..
+  436  rosrun moveit_tutorials pick_place_tutorial
+  437  source devel/setup.bash 
+  438  rosrun moveit_tutorials pick_place_tutorial
+  439  source devel/setup.bash 
+  440  rosrun moveit_tutorials pick_place_tutorial
+  441  rosrun moveit_tutorials 
+  442  catkin_make
+  443  rosrun moveit_tutorials pick_place_tutorial 
+  444  catkin_make
+  445  python3
+  446  rosrun moveit_tutorials pick_place_tutorial 
+  447  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch 
+  448  roslaunch moveit_task_constructor_demo demo.launch 
+  449  roslaunch moveit_task_constructor_demo pickplace.launch 
+  450  rosrun moveit_task_constructor_demo cartesian
+  451  roslaunch moveit_task_constructor_demo pickplace.launch
+  452  roslaunch moveit_task_constructor_demo demo.launch
+  453  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch
+  454  roslaunch moveit_task_constructor_gpd gpd_demo.launch
+  455  roslaunch moveit_task_constructor_demo demo.launch
+  456  roscore
+  457  roslaunch moveit_task_constructor_dexnet dexnet_demo.launch
+  458  rosrun moveit_tutorials pick_place_tutorial 
+  459  roslaunch moveit_task_constructor_demo demo.launch
+  460  rostopic list 
+  461  git clone https://github.com/BerkeleyAutomation/dex-net
+  462  git clone https://github.com/rojas70/learning_ros_noetic.git
+  463  ls
+  464  cd dex-net/
+  465  ls
+  466  cd ..
+  467  git clone -b kinetic-devel https://github.com/ros-planning/moveit_tutorials.git
+  468  sudo gedit /home/trs/ros_ws/src/deep_grasp_demo/deep_grasp_task/src/deep_pick_place_task.cpp
+  469  ls 
+  470  git clone https://github.com/ros-planning/panda_moveit_config
+  471  cd ..
+  472  cd src/
+  473  git clone https://github.com/catkin/catkin_simple
+  474  git clone --resursive https://github.com/mfkenson/MAEG5755-2021-Team-PARK.git team-park
+  475  git clone --resursive https://github.com/mfkenson/MAEG5755-2021-Team-PARK.git
+  476  git clone https://github.com/mfkenson/MAEG5755-2021-Team-PARK.git
+  477  sudo gedit /home/trs/ros_ws/src/learning_ros_noetic/Part_3/opencv_and_pcl/src/pt_cloud_to_image.cpp
+  478  sudo gedit /home/trs/ros_ws/src/learning_ros_noetic/Part_3/pcl_utils/src/pcl_utils.cpp
+  479  cd src/
+  480  git clone https://github.com/introlab/find-object
+  481  roscore
+  482  cd ..
+  483  rviz -d src/team-park/park_simulation/park_gazebo/park.rviz
+  484  catkin_make
+  485  history
+  486  roslaunch moveit_task_constructor_demo pickplace.launch
+  487  history > 1.txt

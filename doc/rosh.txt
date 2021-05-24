@@ -1,0 +1,80 @@
+    1  cd learning_ros_setup_scripts/
+    2  ls
+    3  cd melodic/
+    4  ls
+    5  ./setup_workspace_learning_ros_noetic.sh robot-chenwei wchen@cuhk.du.hk
+    6  ./setup_workspace_learning_ros_melodic.sh robot-chenwei wchen@cuhk.du.hk
+    7  cd srcx
+    8  cd src
+    9  ls
+   10  cd ~/ros_ws/src/
+   11  git clone https://github.com/rojas70/learning_ros_external_pkgs_noetic.git
+   12  cd ..
+   13  catkin_make
+   14  cd src/
+   15  git clone https://github.com/PickNikRobotics/deep_grasp_demo
+   16  cd deep_grasp_demo/
+   17  ls
+   18  chmod +x pcl_install.sh
+   19  sudo ./pcl_install.sh
+   20  ls
+   21  cd pcl-pcl-1.11.0/
+   22  ls
+   23  sudo rm -r ./build/
+   24  cd ..
+   25  sudo ./pcl_install.sh
+   26  ls
+   27  cd ..
+   28  git clone https://github.com/atenpas/gpd
+   29  ls
+   30  cd gpd/
+   31  ls
+   32  sudo gedit CMakeLists.txt 
+   33  cd ..
+   34  catkin_make
+   35  cd src/
+   36  ls
+   37  git clone https://raw.githubusercontent.com/ros-planning/moveit/master/moveit
+   38  git clone https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosintall
+   39  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+   40  sudo apt install wstool
+   41  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+   42  sudo apt install python3-wstool
+   43  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+   44  wstool init .
+   45  wstool merge -t . https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+   46  ls
+   47  wstool remove  moveit_tutorials  # this is cloned in the next section
+   48  wstool update -t .
+   49  ls
+   50  cd ..
+   51  catkin_make
+   52  sudo apt install ros-melodic-octomap
+   54  sudo apt install ros-melodic-eigen-stl-containers 
+   56  sudo apt install ros-melodic-random-numbers
+   63  sudo apt install ros-melodic-rosparam-shortcuts
+
+   59  git clone https://github.com/PickNikRobotics/moveit_task_constructor
+   64  catkin_make
+   65* 
+   66  cd src/gpd/
+   84  git clone git://github.com/flexible-collision-library/fcl.git
+
+   97  sudo apt install ros-melodic-srdfdom
+   81  sudo apt install ros-melodic-graph-msgs 
+   99  sudo apt install ros-melodic-pybind11-catkin 
+  101  sudo apt install ros-melodic-ompl
+  103* sudo apt install libglew
+  105  sudo apt install ros-melodic-warehouse-ros
+  107  sudo apt install ros-melodic-eigenpy
+
+
+anning_scene::PlanningScene’ has no member named ‘getCollisionWorld’; did you mean ‘getCollisionEnv’?
+   scene.getCollisionWorld()->checkRobotCollision(req, res, *scene.getCollisionRobotUnpadded(),
+         ^~~~~~~~~~~~~~~~~
+         getCollisionEnv
+/home/trs/ros_ws/src/moveit_task_constructor/core/src/stages/fix_collision_objects.cpp:121:67: error: ‘class planning_scene::PlanningScene’ has no member named ‘getCollisionRobotUnpadded’; did you mean ‘getCollisionEnvUnpadded’?
+   scene.getCollisionWorld()->checkRobotCollision(req, res, *scene.getCollisionRobotUnpadded(),
+                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                   getCollisionEnvUnpadded
+
